@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'seguro.apps.SeguroConfig',
-    'CategoriaVeiculo.apps.CategoriaVeiculoConfig',
+    'CategoriaVeiculo.apps.CategoriaveiculoConfig',
 
 ]
 
