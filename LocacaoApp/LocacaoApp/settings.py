@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'seguro.apps.SeguroConfig',
     'CategoriaVeiculo.apps.CategoriaveiculoConfig',
+    'cliente.apps.ClienteConfig',
 
 ]
 
