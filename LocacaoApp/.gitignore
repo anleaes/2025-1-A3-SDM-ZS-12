@@ -1,0 +1,9 @@
+modeloapp/__pycache__/
+/apps/seguro/__pycache__/*
+/apps/seguro/migrations/*
+/apps/cliente/__pycache__/*
+/apps/cliente/migrations/*
+/apps/CategoriaVeiculo/__pycache__/*
+/apps/CategoriaVeiculo/migrations/*
+/apps/veiculo/__pycache__/*
+/apps/veiculo/migrations/*
