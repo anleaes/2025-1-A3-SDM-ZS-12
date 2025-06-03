@@ -7,3 +7,5 @@ modeloapp/__pycache__/
 /apps/CategoriaVeiculo/migrations/*
 /apps/veiculo/__pycache__/*
 /apps/veiculo/migrations/*
+/apps/locacao/__pycache__/*
+/apps/locacao/migrations/*
