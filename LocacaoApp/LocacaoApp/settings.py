@@ -48,7 +48,8 @@ INSTALLED_APPS = [
     'cliente.apps.ClienteConfig',
     'veiculo.apps.VeiculoConfig',
     'locacao.apps.LocacaoConfig',
-    'funcionario.apps.FuncionarioConfig',	
+    'funcionario.apps.FuncionarioConfig',
+    'pagamento.apps.PagamentoConfig',	
 
     
 
