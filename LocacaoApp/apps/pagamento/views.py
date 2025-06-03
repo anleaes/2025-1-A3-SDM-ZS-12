@@ -3,6 +3,6 @@ from .models import Pagamento
 from .serializer import PagamentoSerializer
 from rest_framework import viewsets
 
-class LocacaoViewSet(viewsets.ModelViewSet):
+class PagamentoViewSet(viewsets.ModelViewSet):
     queryset = Pagamento.objects.all()
     serializer_class = PagamentoSerializer
