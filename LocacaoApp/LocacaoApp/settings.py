@@ -48,6 +48,8 @@ INSTALLED_APPS = [
     'cliente.apps.ClienteConfig',
     'veiculo.apps.VeiculoConfig',
 
+    
+
 ]
 
 MIDDLEWARE = [
