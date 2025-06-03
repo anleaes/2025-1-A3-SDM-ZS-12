@@ -22,6 +22,6 @@ urlpatterns = [
     path('seguro/', include('seguro.urls', namespace='seguro')),
     path('CategoriaVeiculo/', include('CategoriaVeiculo.urls', namespace='CategoriaVeiculo')),
     path('cliente/', include('cliente.urls', namespace='cliente')),
-    
     path('veiculo/', include('veiculo.urls', namespace='veiculo')),
+    path('locacao/', include('locacao.urls', namespace='locacao') ),
 ]
