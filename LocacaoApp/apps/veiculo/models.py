@@ -1,3 +1,17 @@
 from django.db import models
+from CategoriaVeiculo.models import CategoriaVeiculo
 
-# Create your models here.
+class Veiculo(models.Model):
+    placa = models.CharField(max_length=10, unique=True)
+    marca = models.CharField(max_length=50)
+    modelo = models.CharField(max_length=50)
+    ano = models.IntegerField()
+    categoria = models.ForeignKey(CategoriaVeiculo, on_delete=models.PROTECT)
+
+    class Meta:
+        verbose_name = "Veículo"
+        verbose_name_plural = "Veículos"
+        ordering = ['placa'] 
+
+    def __str__(self):
+        return f"{self.modelo} - {self.placa}"
