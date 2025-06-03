@@ -2,12 +2,13 @@ from django.db import models
 from cliente.models import Cliente
 from veiculo.models import Veiculo
 from seguro.models import Seguro
+from funcionario.models import Funcionario
 
 class Locacao(models.Model):
     cliente = models.ForeignKey(Cliente, on_delete=models.CASCADE)
     veiculo = models.ForeignKey(Veiculo, on_delete=models.CASCADE)
     seguro = models.ForeignKey(Seguro, on_delete=models.SET_NULL, null=True, blank=True)
-    
+    funcionario = models.ForeignKey(Funcionario, on_delete=models.CASCADE)
     data_hora_retirada = models.DateTimeField()
     data_hora_prevista_devolucao = models.DateTimeField()
     data_hora_efetiva_devolucao = models.DateTimeField(null=True, blank=True)
