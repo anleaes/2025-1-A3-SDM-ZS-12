@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'seguro.apps.SeguroConfig',
     'CategoriaVeiculo.apps.CategoriaveiculoConfig',
     'cliente.apps.ClienteConfig',
+    'veiculo.apps.VeiculoConfig',
 
 ]
 
