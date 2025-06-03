@@ -8,7 +8,8 @@ class Cliente(models.Model):
     email = models.EmailField()
     data_nascimento = models.DateField()
     endereco = models.CharField(max_length=255)
-    cidade = models.CharField(max_length=100)
+    cidade = models.CharField(max_length=100, null=True, blank=True)
+
 
     class Meta:
         verbose_name = 'Cliente' 
