@@ -6,6 +6,8 @@ class Veiculo(models.Model):
     marca = models.CharField(max_length=50)
     modelo = models.CharField(max_length=50)
     ano = models.IntegerField()
+    cor = models.CharField(max_length=30)
+    valor_diaria = models.DecimalField(max_digits=10, decimal_places=2)
     categoria = models.ForeignKey(CategoriaVeiculo, on_delete=models.PROTECT)
 
     class Meta:
