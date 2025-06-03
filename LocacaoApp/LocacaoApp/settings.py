@@ -47,7 +47,8 @@ INSTALLED_APPS = [
     'CategoriaVeiculo.apps.CategoriaveiculoConfig',
     'cliente.apps.ClienteConfig',
     'veiculo.apps.VeiculoConfig',
-    'locacao.apps.LocacaoConfig',	
+    'locacao.apps.LocacaoConfig',
+    'funcionario.apps.FuncionarioConfig',	
 
     
 
