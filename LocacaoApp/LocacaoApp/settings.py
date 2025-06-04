@@ -49,8 +49,8 @@ INSTALLED_APPS = [
     'veiculo.apps.VeiculoConfig',
     'locacao.apps.LocacaoConfig',
     'funcionario.apps.FuncionarioConfig',
-    'pagamento.apps.PagamentoConfig',	
-    'Acessorio.apps.AcessorioConfig',
+    'pagamento.apps.PagamentoConfig',
+    'acessorio.apps.AcessorioConfig',
 
     
 

@@ -9,3 +9,9 @@ modeloapp/__pycache__/
 /apps/veiculo/migrations/*
 /apps/locacao/__pycache__/*
 /apps/locacao/migrations/*
+/apps/acessorio/__pycache__/*
+/apps/acessorio/migrations/*
+/apps/pagamento/__pycache__/*
+/apps/pagamento/migrations/*
+/apps/funcionario/__pycache__/*
+/apps/funcionario/migrations/*
