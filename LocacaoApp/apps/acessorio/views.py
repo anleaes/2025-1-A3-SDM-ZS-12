@@ -1,3 +1,8 @@
 from django.shortcuts import render
+from .models import Acessorio
+from .serializer import AcessorioSerializer
+from rest_framework import viewsets
 
-# Create your views here.
+class AcessorioViewSet(viewsets.ModelViewSet):
+    queryset = Acessorio.objects.all()
+    serializer_class = AcessorioSerializer
