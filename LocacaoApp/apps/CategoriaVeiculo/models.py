@@ -3,7 +3,6 @@ from django.db import models
 class CategoriaVeiculo(models.Model):
     nome = models.CharField(max_length=50)
     descricao = models.TextField()
-    preco_adicional_diaria = models.DecimalField(max_digits=10, decimal_places=2)
     tipo_combustivel = models.CharField(max_length=20, choices=[
         ("Gasolina", "Gasolina"),
         ("Etanol", "Etanol"),

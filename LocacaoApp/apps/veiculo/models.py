@@ -18,7 +18,7 @@ class Veiculo(models.Model):
         ordering = ['placa'] 
 
     def __str__(self):
-        return f"{self.modelo} - {self.placa}"
+        return f"{self.modelo} - {self.ano}"
     
     def listar_acessorios(self):
         return ", ".join(ac.nome for ac in self.acessorios.all())
