@@ -27,4 +27,5 @@ urlpatterns = [
     path('funcionario/', include('funcionario.urls', namespace='funcionario') ),
     path('pagamento/', include('pagamento.urls', namespace='pagamento') ),
     path('Acessorio/', include('acessorio.urls', namespace='Acessorio') ),
+    path('carrinholocacao/', include('carrinholocacao.urls', namespace='carrinholocacao') ),
 ]

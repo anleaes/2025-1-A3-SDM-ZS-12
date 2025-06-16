@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'funcionario.apps.FuncionarioConfig',
     'pagamento.apps.PagamentoConfig',
     'acessorio.apps.AcessorioConfig',
+    'carrinholocacao.apps.CarrinholocacaoConfig',
 
     
 
