@@ -15,3 +15,5 @@ modeloapp/__pycache__/
 /apps/pagamento/migrations/*
 /apps/funcionario/__pycache__/*
 /apps/funcionario/migrations/*
+/apps/carrinholocacao/__pycache__/*
+/apps/carrinholocacao/migrations/*
