@@ -5,7 +5,7 @@ from locacao.models import Locacao
 from seguro.models import Seguro
 
 class CarrinhoLocacao(models.Model):
-    locacao = models.ForeignKey(Locacao, on_delete=models.CASCADE)
+    locacao = models.ForeignKey(Locacao, on_delete=models.CASCADE, null=True, blank=True)
     veiculo = models.ForeignKey(Veiculo, on_delete=models.CASCADE, null=True, blank=True)
     seguro = models.ForeignKey(Seguro, on_delete=models.CASCADE, null=True, blank=True)
     quantidade = models.PositiveIntegerField(default=1)

@@ -1,9 +1,9 @@
 from django.db import models
-from locacao.models import Locacao  
+from carrinholocacao.models import CarrinhoLocacao 
 
 class Pagamento(models.Model):
 
-    locacao = models.ForeignKey('locacao.Locacao', on_delete=models.CASCADE)
+    carrinho_locacao = models.ForeignKey(CarrinhoLocacao, on_delete=models.CASCADE, blank=True, null=True)
     forma_pagamento = models.CharField(max_length=20, choices=[
         ('Pix', 'Pix'),
         ('Crédito', 'Crédito'),
