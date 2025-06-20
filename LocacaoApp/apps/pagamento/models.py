@@ -18,11 +18,6 @@ class Pagamento(models.Model):
         ('Cancelado', 'Cancelado')
     ])
 
-    def save(self, *args, **kwargs):
-        if not self.valor and self.locacao:
-            self.valor = self.locacao.valor_total_previsto or 0
-        super().save(*args, **kwargs)
-
     class Meta:
         verbose_name = "Pagamento"
         verbose_name_plural = "Pagamentos"
