@@ -78,20 +78,11 @@ direction TB
 
     }
 
-    class Adicionais {
-        +String nome
-        +String descricao
-        +Decimal valor_adicional
-        +String categoria
-
-    }
-
     Cliente "1" -- "0..*" Locacao : um para muitos
     Veiculo "1" -- "0..*" CarrinhoLocacao
     Veiculo "1" -- "1" CategoriaVeiculo : um para muitos
-    Locacao "1" -- "0..*" Pagamento
+    CarrinhoLocacao "1" -- "0..*" Pagamento
     Veiculo "1" -- "0..*" Acessorios : Muitos para Muitos
     Locacao "1" -- "0..*" Funcionario
     Seguro "1" -- "0..*" CarrinhoLocacao
     Locacao "1" -- "0..*" CarrinhoLocacao : Carrinho de compras
-    Adicionais "1" -- "0..*" CarrinhoLocacao
