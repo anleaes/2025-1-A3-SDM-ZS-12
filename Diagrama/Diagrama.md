@@ -30,7 +30,6 @@ direction TB
 
     class Locacao {
 	    +Cliente cliente
-	    +CarrinhoLocacao carrinholocacao
 	    +Funcionario funcionario
 	    +DateTime data_hora_retirada
 	    +DateTime data_hora_prevista_devolucao
@@ -71,6 +70,7 @@ direction TB
     }
 
     class CarrinhoLocacao {
+		+Locacao locacao
         +Veiculos veiculos
         +Adicionais adicionais
         +Seguro seguro
